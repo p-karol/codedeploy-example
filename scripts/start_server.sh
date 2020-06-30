@@ -5,7 +5,7 @@ VIRTUALENV=/home/ubuntu/venv
 
 pushd $(dirname "$0")
 source $VIRTUALENV/bin/activate
-export FLASK_APP=app.py
+export FLASK_APP=/home/ubuntu/app.py
 /usr/local/bin/flaskflask run --host=0.0.0.0 --port 8080 >/dev/null 2>&1 &
 
 
