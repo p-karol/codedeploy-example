@@ -6,9 +6,9 @@
 #sudo dpkg-reconfigure locales
 
 sudo apt-get update
-sudo apt-get install python2.7 python-pip virtualenv
+sudo apt-get install -y python2.7 python-pip virtualenv
 
 mkdir venv
 virtualenv venv
 source venv/bin/activate
-pip install -y Flask flask-wtf boto3
+pip install Flask flask-wtf boto3
